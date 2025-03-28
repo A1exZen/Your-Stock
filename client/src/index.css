@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Скрытие стрелок вверх/вниз */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0; /* Удаление внешнего отступа */
+}
+
+:root {
+	--primary: #1f2937;
+	--secondary: #1a56db;
+}
+
+* {
+	font-family: 'Nunito', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 500;
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary) var(--primary);
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border-radius: 14px;
+	border: 3px solid var(--primary);
+}
