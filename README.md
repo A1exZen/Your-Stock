@@ -3,7 +3,7 @@
 ### **Frontend**
 
 - **React**
-- **TypeScript**
+- **JavaScript**
 - **Vite**
 - **ReduxToolkit**
 - **React-charts**
